@@ -1,0 +1,8 @@
+media_player.apple_tv:
+  name:
+  platform: apple_tv
+  unique_id: 6846bd070320e6fa66bfd2a3c40c24824d389f472395ee6c07bb20ff84113f06
+remote.apple_tv:
+  name:
+  platform: apple_tv
+  unique_id: 6846bd070320e6fa66bfd2a3c40c24824d389f472395ee6c07bb20ff84113f06
