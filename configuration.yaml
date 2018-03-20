@@ -57,7 +57,14 @@ sun:
 
 # Weather prediction
 sensor:
-  - platform: yr
+  - platform: wunderground
+    api_key: 3de07358e1e4dee2
+    monitored_conditions:
+      - alerts
+      - location
+      - feelslike_f
+      - temp_f
+      - weather
 
 # Text to speech
 tts:
@@ -69,3 +76,5 @@ cloud:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+
+
