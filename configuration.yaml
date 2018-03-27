@@ -13,8 +13,6 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
-# Show links to resources in log and frontend
-introduction:
 
 # Enables the frontend
 frontend:
@@ -52,6 +50,7 @@ logbook:
 # Enables a map showing the location of tracked devices
 map:
 
+
 # Track the sun
 sun:
 
@@ -65,6 +64,18 @@ sensor:
       - feelslike_f
       - temp_f
       - weather
+
+apple_tv:
+  - host: 192.168.1.110
+    login_id: 00000000-08ff-f04a-a087-13e7f6654cd1
+    name: Basement AppleTV
+    start_off: true
+    credentials: 2EA6B9D3FBAB4A97:3EB65C30B9C278018118405218AFE468F2523B2C764881F26B12F5EDCA7E5567
+  - host: 192.168.1.102
+    login_id: 00000000-08ff-f04a-a087-13e7f6654cd1
+    name: Living Room AppleTV
+    start_off: true
+    credentials: 2AA3F65455D815AD:B6073B40D917AA00A5937BAD79642903AE41DD5F08D62BACBCBC93913676CF0F
 
 # Text to speech
 tts:

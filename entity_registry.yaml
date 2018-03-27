@@ -6,3 +6,11 @@ remote.apple_tv:
   name:
   platform: apple_tv
   unique_id: 6846bd070320e6fa66bfd2a3c40c24824d389f472395ee6c07bb20ff84113f06
+media_player.family_room:
+  name:
+  platform: apple_tv
+  unique_id: 205301ef6a9dd96ea3873384b13b7690bd401dea4df97b12be27c8cc1d1aa5f6
+remote.family_room:
+  name:
+  platform: apple_tv
+  unique_id: 205301ef6a9dd96ea3873384b13b7690bd401dea4df97b12be27c8cc1d1aa5f6

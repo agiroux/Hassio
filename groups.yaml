@@ -1,14 +1,11 @@
-#Wunderground Group
-default_view:
-  name: Main 
-  view: yes
-  entities:
-    - group.wunderground_view
-
-wunderground_view:
+wunderground:
   name: Weather Overview
   entities:
-    - location
-    - feelslike_f
-    - temp_f
-    - weather
+    - sensor.pws_location
+    - sensor.pws_feelslike_f
+    - sensor.pws_temp_f
+    - sensor.pws_weather
+    - sensor.pws_alerts
+    - sun.sun
+
+    
