@@ -2,10 +2,10 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 40.036
-  longitude: -86.1705
+  latitude: !secret latitude
+  longitude: !secret longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 282
+  elevation: !secret elevation
   # metric for Metric, imperial for Imperial
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -67,15 +67,15 @@ sensor:
 
 apple_tv:
   - host: 192.168.1.110
-    login_id: 00000000-08ff-f04a-a087-13e7f6654cd1
+    login_id: !secret basement_login
     name: Basement AppleTV
     start_off: true
-    credentials: 2EA6B9D3FBAB4A97:3EB65C30B9C278018118405218AFE468F2523B2C764881F26B12F5EDCA7E5567
+    credentials: !secret basement_credentials
   - host: 192.168.1.102
-    login_id: 00000000-08ff-f04a-a087-13e7f6654cd1
+    login_id: !secret livingroom_login
     name: Living Room AppleTV
     start_off: true
-    credentials: 2AA3F65455D815AD:B6073B40D917AA00A5937BAD79642903AE41DD5F08D62BACBCBC93913676CF0F
+    credentials: !secret livingroom_credentials
 
 # Text to speech
 tts:
